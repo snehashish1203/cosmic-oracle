@@ -1,0 +1,25 @@
+[project]
+name = "cosmic-oracle"
+version = "0.1.0"
+description = "A mystical CLI decision oracle built with Rich."
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [
+    { name = "Snehashish" }
+]
+
+dependencies = [
+    "rich"
+]
+
+[project.scripts]
+oracle = "cosmic_oracle.cli:main"
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["cosmic_oracle*"]
+exclude = ["venv*", "testenv*"]
+
